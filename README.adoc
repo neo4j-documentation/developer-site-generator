@@ -1,0 +1,8 @@
+= Neo4j Site Generator for Antora
+
+This is the Neo4j site generator pipeline for producing and publishing static documentation sites with Antora.
+This pipeline is invoked by the generate command of Antora’s CLI to produce and publish static documentation sites.
+
+== Features
+
+- Dynamically generate category pages from Knowledge Base articles
