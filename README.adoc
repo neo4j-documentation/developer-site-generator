@@ -6,3 +6,4 @@ This pipeline is invoked by the generate command of Antora’s CLI to produce an
 == Features
 
 - Dynamically generate category pages from Knowledge Base articles
+- Dynamically generate tag pages from Knowledge Base articles
