@@ -1,19 +1,19 @@
 {
-  "name": "neo4j-antora-site-generator",
+  "name": "@neo4j/developer-site-generator",
   "version": "0.1.0",
   "description": "The Neo4j site generator pipeline for producing and publishing static documentation sites with Antora.",
-  "license": "MPL-2.0",
+  "license": "MIT",
   "author": "Guillaume Grossetie (https://yuzutech.fr)",
   "contributors": [
     "Guillaume Grossetie <ggrossetie@yuzutech.fr>"
   ],
-  "homepage": "https://github.com/Mogztter/neo4j-antora-site-generator#readme",
+  "homepage": "https://github.com/neo4j-documentation/developer-site-generator#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mogztter/neo4j-antora-site-generator.git"
+    "url": "git+https://github.com/neo4j-documentation/developer-site-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/Mogztter/neo4j-antora-site-generator/issues"
+    "url": "https://github.com/neo4j-documentation/developer-site-generator/issues"
   },
   "main": "lib/index.js",
   "dependencies": {
