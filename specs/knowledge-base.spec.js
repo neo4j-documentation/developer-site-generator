@@ -2,8 +2,8 @@ const { generateKnowledgeBasePageDescription } = require('../lib/knowledge-base'
 const chai = require('chai')
 const expect = chai.expect
 
-describe('Generate KB page-description', () => {
-  it('should not generate a page-description when already defined', () => {
+describe('Generate KB description', () => {
+  it('should not generate a description when already defined', () => {
     const input = `<div class="paragraph">
 <p><strong>Background</strong></p>
 </div>
@@ -22,12 +22,12 @@ So it was blogged about, and utilized by users looking for that functionality.</
       },
       asciidoc: {
         attributes: {
-          'page-description': 'Will execution_guard_enabled work in my release of Neo4j? Let\'s find out!'
+          'description': 'Will execution_guard_enabled work in my release of Neo4j? Let\'s find out!'
         }
       }
     }
     generateKnowledgeBasePageDescription([page])
-    expect(page.asciidoc.attributes['page-description']).to.equal('Will execution_guard_enabled work in my release of Neo4j? Let\'s find out!')
+    expect(page.asciidoc.attributes['description']).to.equal('Will execution_guard_enabled work in my release of Neo4j? Let\'s find out!')
   })
   it('should ignore listing block', () => {
     const input = `<div class="paragraph">
@@ -72,6 +72,6 @@ Note that Cypher queries must end with a semicolon.</code></pre>
       }
     }
     generateKnowledgeBasePageDescription([page])
-    expect(page.asciidoc.attributes['page-description']).to.equal('The following will demonstrate how to use cypher-shell to get a better understanding of a Neo4j Causal Cluster instance and its implementation of routing. The initial scenario is described with…')
+    expect(page.asciidoc.attributes['description']).to.equal('The following will demonstrate how to use cypher-shell to get a better understanding of a Neo4j Causal Cluster instance and its implementation of routing. The initial scenario is described with…')
   })
 })
