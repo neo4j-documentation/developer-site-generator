@@ -28,7 +28,9 @@
     "@antora/site-mapper": "3.0.0-alpha.1",
     "@antora/site-publisher": "3.0.0-alpha.1",
     "@antora/ui-loader": "3.0.0-alpha.1",
-    "cheerio": "^1.0.0-rc.3"
+    "asciidoctor-jupyter": "git+https://github.com/neo4j-documentation/asciidoctor-jupyter.git",
+    "cheerio": "^1.0.0-rc.3",
+    "node-fetch": "^2.6.1"
   },
   "engines": {
     "node": ">=10.17.0"
@@ -47,7 +49,8 @@
   ],
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "sinon": "^10.0.0"
   },
   "scripts": {
     "test": "mocha specs/**.spec.js"
