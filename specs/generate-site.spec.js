@@ -14,4 +14,11 @@ describe('Generate site', () => {
     const generateSite = require('../lib/generate-site')
     await generateSite(['--playbook', path.join(__dirname, 'fixtures', 'graphgists-site.yml')], process.env)
   }).timeout(30000)
+  // integration test with a single graphgists
+  it.skip('should generate site with a single graphgist', async () => {
+    const graphGistsData = JSON.parse(await fs.readFile(path.join(__dirname, '..', 'specs', 'fixtures', 'graphgist-exploring-star-wars.json'), 'utf8')).data.GraphGist
+    sinon.stub(graphGistGraphqlApi, "getLiveGraphGists").returns(graphGistsData)
+    const generateSite = require('../lib/generate-site')
+    await generateSite(['--playbook', path.join(__dirname, 'fixtures', 'graphgists-site.yml')], process.env)
+  }).timeout(30000)
 })
