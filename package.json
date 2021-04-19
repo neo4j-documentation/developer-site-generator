@@ -28,7 +28,7 @@
     "@antora/site-mapper": "3.0.0-alpha.1",
     "@antora/site-publisher": "3.0.0-alpha.1",
     "@antora/ui-loader": "3.0.0-alpha.1",
-    "asciidoctor-jupyter": "git+https://github.com/neo4j-documentation/asciidoctor-jupyter.git",
+    "asciidoctor-jupyter": "0.1.0",
     "cheerio": "^1.0.0-rc.3",
     "node-fetch": "^2.6.1"
   },
