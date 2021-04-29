@@ -1,0 +1,18 @@
+site:
+  title: Neo4j GraphGists
+
+output:
+  dir: ./../../build/site
+
+ui:
+  bundle:
+    url: https://s3-eu-west-1.amazonaws.com/static-content.neo4j.com/build/ui-bundle-v0.10.2.zip
+    #url: /path/to/ui-bundle.zip
+    snapshot: true
+
+urls:
+  html_extension_style: indexify
+
+asciidoc:
+  attributes:
+    site-component: graphgists
