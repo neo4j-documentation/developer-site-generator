@@ -180,7 +180,29 @@ query
 
 //setup
 // hide
-[source,cypher,role="foo bar runnable backend:graphgist instant hidden"]
+[source,cypher,role="foo bar runnable backend:graphgist instant single hidden"]
+----
+query
+----
+`)
+  })
+  it('should add single role on Cypher source block when // setup is present', async () => {
+    const result = preprocessing(`= Title
+
+== Section
+
+//setup
+[source,cypher,role="foo bar"]
+----
+query
+----
+`)
+    expect(result).to.equal(`= Title
+
+== Section
+
+//setup
+[source,cypher,role="foo bar runnable backend:graphgist instant single"]
 ----
 query
 ----
