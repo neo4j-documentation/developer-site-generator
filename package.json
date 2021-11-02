@@ -1,6 +1,6 @@
 {
   "name": "@neo4j/developer-site-generator",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "The Neo4j site generator pipeline for producing and publishing static documentation sites with Antora.",
   "license": "MIT",
   "author": "Guillaume Grossetie (https://yuzutech.fr)",
