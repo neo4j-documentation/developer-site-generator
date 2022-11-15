@@ -1,4 +1,16 @@
 = Neo4j Site Generator for Antora
+ifdef::env-github[]
+:important-caption: :heavy_exclamation_mark:
+endif::[]
+
+[IMPORTANT]
+====
+This repository is outdated and will be archived. We are now using Antora 3+ with extensions:
+
+- https://github.com/neo4j-documentation/antora-knowledge-base-extension 
+- https://github.com/neo4j-documentation/antora-training-extension
+- https://github.com/neo4j-documentation/antora-graphgist-extension
+====
 
 This is the Neo4j site generator pipeline for producing and publishing static documentation sites with Antora.
 This pipeline is invoked by the generate command of Antora’s CLI to produce and publish static documentation sites.
